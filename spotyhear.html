@@ -3,7 +3,7 @@
 <script src="spoty.js"></script>
   <body>
   
-  <h4>Test v0.00019<h4>
+  <h4>Test v0.00020<h4>
   <script>
   try{	
 var redirect_uri = "https://cerobits.github.io/spotyhearinside.html";
@@ -31,7 +31,7 @@ url='https://accounts.spotify.com/authorize' +
 	xhr.send()
 	}*/
 	
-			var clientId = "7850e064845b4565aa3a1ab5e80d51d6";
+			/*var clientId = "7850e064845b4565aa3a1ab5e80d51d6";
 			var clientSecret = "b60556d2bb4f47a0acd35ba9ab0083db";		
 			var authorizationBasic = window.btoa(clientId + ':' + clientSecret);
 			var params = "grant_type=client_credentials";
@@ -47,7 +47,24 @@ url='https://accounts.spotify.com/authorize' +
 				if (request.readyState === 4) {
 				   alert(request.responseText);
 				}
-			};
+			};*/
+			var data = "grant_type=client_credentials&undefined=";
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "https://accounts.spotify.com/api/token");
+xhr.setRequestHeader("Authorization", "Basic Nzg1MGUwNjQ4NDViNDU2NWFhM2ExYWI1ZTgwZDUxZDY6YjYwNTU2ZDJiYjRmNDdhMGFjZDM1YmE5YWIwMDgzZGI=");
+xhr.setRequestHeader("cache-control", "no-cache");
+xhr.setRequestHeader("Postman-Token", "17bf10e8-ddb0-4a4b-b5a6-13c0501de392");
+
+xhr.send(data);
 }
 catch(error){
 	alert(error.message);

@@ -2,11 +2,12 @@
 <html>
 <script src="spoty.js"></script>
   <body>
-	  <h3>Test Spotify<h3>
+  
+  <h4>Test v0.0001<h4>
   <script>
   try{	
 var redirect =  encodeURI("https://cerobits.github.io/spotyhear.html");
-var uri="https://accounts.spotify.com/authorize?client_id=09fbeaa012db4b04a7db5b8cfd933ecf&response_type=code&redirect_uri="+redirect+"&callback&scope=user-read-private%20user-read-email&state=34fFs29kd09"
+var uri="https://accounts.spotify.com/authorize?client_id=09fbeaa012db4b04a7db5b8cfd933ecf&response_type=code&redirect_uri=https%3A%2F%2Fcerobits.github.io%2Fspotyhear.html";
 
 var xhr = new XMLHttpRequest()
         xhr.open('GET', uri, true)

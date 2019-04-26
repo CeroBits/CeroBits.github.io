@@ -3,7 +3,7 @@
 <script src="spoty.js"></script>
   <body>
   
-  <h4>Test v0.00012<h4>
+  <h4>Test v0.00015<h4>
   <script>
   try{	
 var redirect_uri = "https://cerobits.github.io/spotyhearinside.html";
@@ -15,17 +15,33 @@ url='https://accounts.spotify.com/authorize' +
   (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
   '&redirect_uri=' + encodeURIComponent(redirect_uri);
   // window.open(url);
+	
+	
+	/*var xhr = new XMLHttpRequest()
+	xhr.open('GET', url, true)
+	xhr.withCredentials = true
+	xhr.onreadystatechange = function() {
+	if (xhr.readyState === 2) {// do something}
+	var resultss= "";
+	}else if (this.readyState == 4 && this.status == 200) {
+	// Typical action to be performed when the document is ready:
+	var results= "";
+	}
+	xhr.setRequestHeader('Content-Type', 'application/json')
+	xhr.send()
+	}*/
+	
 		var clientId = "7850e064845b4565aa3a1ab5e80d51d6";
 		var clientSecret = "b60556d2bb4f47a0acd35ba9ab0083db";
 		// var authorizationBasic = $.base64.btoa(clientId + ':' + clientSecret);
 			var authorizationBasic = window.btoa(clientId + ':' + clientSecret);
 
 			var request = new XMLHttpRequest();
-			request.open('POST', "https://accounts.spotify.com/api/token", true);
-			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+			request.open('POST', "https://accounts.spotify.com/api/token", true);	
+			request.withCredentials = true;		
 			request.setRequestHeader('grant_type', 'client_credentials');
 			request.setRequestHeader('Authorization', 'Basic ' + authorizationBasic);
-			request.setRequestHeader('Accept', 'application/json');
+			request.setRequestHeader('Content-Type', 'application/json');
 			request.send();
 
 			request.onreadystatechange = function () {

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-<body>
-  
-  <h4>Test v0.00023<h4>
+<body>  
+  <h4>Test v0.00026<h4>
   <script>
   try{	
 var redirect_uri = "https://cerobits.github.io/spotyhearinside.html";
@@ -37,7 +36,7 @@ url='https://accounts.spotify.com/authorize' +
 			var request = new XMLHttpRequest();
 			request.open('POST', "https://accounts.spotify.com/api/token", true);	
 			request.withCredentials = true;		
-			request.setRequestHeader('Access-Control-Allow-Origin', '*');
+			request.setRequestHeader('Access-Control-Allow-Origin', 'include');
 			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 			request.setRequestHeader('Authorization', 'Basic ' + authorizationBasic);
 			request.send(params);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>  
-  <h4>Test v0.00026<h4>
+  <h4>Test v0.00027<h4>
   <script>
   try{	
 var redirect_uri = "https://cerobits.github.io/spotyhearinside.html";
@@ -12,25 +12,12 @@ url='https://accounts.spotify.com/authorize' +
   '&client_id=' + my_client_id +
   (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
   '&redirect_uri=' + encodeURIComponent(redirect_uri);
-  // window.open(url);
+   window.open(url);
 	
+	/* no se puede esto porque spotify bloquea por CORS llamadas client-side
 	
-	/*var xhr = new XMLHttpRequest()
-	xhr.open('GET', url, true)
-	xhr.withCredentials = true
-	xhr.onreadystatechange = function() {
-	if (xhr.readyState === 2) {// do something}
-	var resultss= "";
-	}else if (this.readyState == 4 && this.status == 200) {
-	// Typical action to be performed when the document is ready:
-	var results= "";
-	}
-	xhr.setRequestHeader('Content-Type', 'application/json')
-	xhr.send()
-	}*/
-	
-			var clientId = "7850e064845b4565aa3a1ab5e80d51d6";
-			var clientSecret = "b60556d2bb4f47a0acd35ba9ab0083db";		
+			var clientId ="X";
+			var clientSecret = "X";		
 			var authorizationBasic = window.btoa(clientId + ':' + clientSecret);
 			var params = "grant_type=client_credentials";
 			var request = new XMLHttpRequest();
@@ -46,6 +33,7 @@ url='https://accounts.spotify.com/authorize' +
 				   alert(request.responseText);
 				}
 			};
+			*/
 }
 catch(error){
 	alert(error.message);

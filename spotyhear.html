@@ -3,7 +3,7 @@
 <script src="spoty.js"></script>
   <body>
   
-  <h4>Test v0.00015<h4>
+  <h4>Test v0.00016<h4>
   <script>
   try{	
 var redirect_uri = "https://cerobits.github.io/spotyhearinside.html";
@@ -39,10 +39,10 @@ url='https://accounts.spotify.com/authorize' +
 			var request = new XMLHttpRequest();
 			request.open('POST', "https://accounts.spotify.com/api/token", true);	
 			request.withCredentials = true;		
-			request.setRequestHeader('grant_type', 'client_credentials');
+			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 			request.setRequestHeader('Authorization', 'Basic ' + authorizationBasic);
 			request.setRequestHeader('Content-Type', 'application/json');
-			request.send();
+			request.send("grant_type=client_credentials");
 
 			request.onreadystatechange = function () {
 				if (request.readyState === 4) {

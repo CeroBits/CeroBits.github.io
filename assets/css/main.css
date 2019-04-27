@@ -2347,9 +2347,10 @@ input, select, textarea {
 					margin: 0 0 2em 0;
 				}
 
-			}
+				}
+		
 
-/* Table */
+	/* Table */
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -3577,3 +3578,6 @@ input, select, textarea {
 			}
 
 		}
+		
+		
+		

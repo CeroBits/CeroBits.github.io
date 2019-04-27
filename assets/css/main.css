@@ -2314,6 +2314,11 @@ input, select, textarea {
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
+		.image.centrado {
+			
+			padding: 0 1.5em 1em 0;
+			top: 0.2em;
+		}
 
 		.image.right {
 			float: right;
@@ -2326,9 +2331,11 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
+		
 
 			.image.fit img {
 				width: 100%;
+			
 			}
 
 		.image.main {

@@ -2701,7 +2701,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #c100e8;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2969,11 +2969,11 @@ input, select, textarea {
 					}
 
 			.tilesRepo article.style1 > .image:before {
-				background-color: #dd3b1a;
+				background-color: #ff2873;
 			}
 
 			.tilesRepo article.style2 > .image:before {
-				background-color: #3f913b;
+				background-color: #f224ee;
 			}
 
 			.tilesRepo article.style3 > .image:before {
@@ -2981,7 +2981,7 @@ input, select, textarea {
 			}
 
 			.tilesRepo article.style4 > .image:before {
-				background-color: #36876a;
+				background-color: #75f987;
 			}
 
 			.tilesRepo article.style5 > .image:before {
@@ -2992,7 +2992,7 @@ input, select, textarea {
 				background-color: #8499e7;
 			}
 			.tilesRepo article.style7 > .image:before {
-				background-color: #d62920;
+				background-color: #ce00b9;
 			}
 		
 

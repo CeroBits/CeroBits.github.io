@@ -2699,32 +2699,31 @@ input, select, textarea {
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
-
 			.tiles article.style1 > .image:before {
-				background-color: #c100e8;
+				background-color: #9B1616;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #0E22B8;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #005D21;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #0246A7;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #512A9E;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #C31B00;
 			}
 			.tiles article.style7 > .image:before {
-				background-color: #d62920;
+				background-color: #8F02B8;
 			}
 		
 
@@ -2969,30 +2968,30 @@ input, select, textarea {
 					}
 
 			.tilesRepo article.style1 > .image:before {
-				background-color: #ff2873;
+				background-color: #9B1616;
 			}
 
 			.tilesRepo article.style2 > .image:before {
-				background-color: #f224ee;
+				background-color: #0E22B8;
 			}
 
 			.tilesRepo article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #005D21;
 			}
 
 			.tilesRepo article.style4 > .image:before {
-				background-color: #75f987;
+				background-color: #0246A7;
 			}
 
 			.tilesRepo article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #512A9E;
 			}
 
 			.tilesRepo article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #C31B00;
 			}
 			.tilesRepo article.style7 > .image:before {
-				background-color: #ce00b9;
+				background-color: #8F02B8;
 			}
 		
 

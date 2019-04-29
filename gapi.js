@@ -27,8 +27,6 @@ document.onreadystatechange = function () {
 	    }
         }
     }
-  }
-}
 catch(error){
 	console.log(error.message);
 	

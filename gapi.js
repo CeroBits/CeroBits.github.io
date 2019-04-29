@@ -4,7 +4,7 @@ try{
 	function startYoutube(query) {
     // 2. Initialize the JavaScript client library.
   gapi.client.init({
-    'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
+    'apiKey': 'AIzaSyCgThUu4OMEZ3QQlXI9enG60YMTVHXYv_8',
     // clientId and scope are optional if auth is not required.
     //'clientId': 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
     //'scope': 'profile',

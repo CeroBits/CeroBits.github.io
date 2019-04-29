@@ -22,7 +22,8 @@ try{
 // 1. Load the JavaScript client library.
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-		gapi.load('client', startYoutube);
+		var resultObject = gapi.load('client', startYoutube);
+		
         }
     }
 }

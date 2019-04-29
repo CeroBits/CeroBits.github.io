@@ -11,10 +11,11 @@ try{
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://www.googleapis.com/youtube/v3/search?part=id&key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
+      'path': 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
     })
   }).then(function(response) {
     console.log(response.result);
+	var resultObject = response.result;
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
   });
@@ -22,7 +23,7 @@ try{
 // 1. Load the JavaScript client library.
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-		var resultObject = gapi.load('client', startYoutube);
+		gapi.load('client', startYoutube);
 		
         }
     }

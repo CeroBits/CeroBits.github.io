@@ -22,11 +22,9 @@ try{
 };
 // 1. Load the JavaScript client library.
 document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
-	    var query =  encodeURIComponent(document.getElementById("params").value;
-		if(query)!=null){
+    if (document.readyState == "complete") {	  		
 		gapi.load('client', startYoutube);		
-		}
+	    }
         }
     }
 }

@@ -53,11 +53,11 @@
 			}			
 		}
 		///key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM	
-		function searchParam(){
+		/*function playVideo(){
 			
 			var query =  encodeURIComponent(document.getElementById("params").value);
 			player.loadVideoById(query);
 			
 			
-		}
+		}*/
 	

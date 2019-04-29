@@ -1,7 +1,7 @@
 //  'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
 
 try{	
-	function startYoutube() {
+	function startYoutube(query) {
     // 2. Initialize the JavaScript client library.
   gapi.client.init({
     'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
@@ -11,7 +11,7 @@ try{
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
+      'path': 'https://www.googleapis.com/youtube/v3/search?q='+query+'part=snippet&key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
     })
   }).then(function(response) {
     console.log(response.result);
@@ -23,8 +23,9 @@ try{
 // 1. Load the JavaScript client library.
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-		gapi.load('client', startYoutube);
-		
+		if(var query =  encodeURIComponent(document.getElementById("params").value)!=null){
+		gapi.load('client', startYoutube);		
+		}
         }
     }
 }
@@ -32,6 +33,10 @@ catch(error){
 	console.log(error.message);
 	
 }
- 
+ function searchParam(){			
+			var query =  encodeURIComponent(document.getElementById("params").value);
+			startYoutube(query);
+		}
+		
 
 	

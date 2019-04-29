@@ -23,7 +23,8 @@ try{
 // 1. Load the JavaScript client library.
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-		if(var query =  encodeURIComponent(document.getElementById("params").value)!=null){
+	    var query =  encodeURIComponent(document.getElementById("params").value;
+		if(query)!=null){
 		gapi.load('client', startYoutube);		
 		}
         }

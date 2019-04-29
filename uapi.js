@@ -54,7 +54,8 @@
 		///key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM	
 		function searchParam(){
 			
-			var query =  encodeURIComponent(document.getElementById("params"));
+			var query =  encodeURIComponent(document.getElementById("params").value);
 			onYouTubeIframeAPIReady(query);
+			
 		}
 	

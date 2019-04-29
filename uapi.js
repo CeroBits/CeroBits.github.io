@@ -12,7 +12,8 @@
         player = new YT.Player('player', {
           height: '220',
           width: '220',
-          videoId: id,//'_ioc6sdgugo',
+          videoId:'' ,//'_ioc6sdgugo',
+		  //playerVars: { 'autoplay': 1, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -55,7 +56,8 @@
 		function searchParam(){
 			
 			var query =  encodeURIComponent(document.getElementById("params").value);
-			onYouTubeIframeAPIReady(query);
+			player.loadVideoById(query);
+			
 			
 		}
 	

@@ -8,11 +8,11 @@
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var player;
-      function onYouTubeIframeAPIReady(id) {
+      function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           height: '220',
           width: '220',
-          videoId:'' ,//'_ioc6sdgugo',
+          videoId:'M7lc1UVf-VE' ,//'_ioc6sdgugo',
 		  //playerVars: { 'autoplay': 1, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,
@@ -53,10 +53,11 @@
 			}			
 		}
 		///key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM	
+		
 		/*function playVideo(){
 			
-			var query =  encodeURIComponent(document.getElementById("params").value);
-			player.loadVideoById(query);
+			var videoId =  encodeURIComponent(document.getElementById("videoId").value);
+			player.loadVideoById(videoId);
 			
 			
 		}*/

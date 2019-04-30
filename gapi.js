@@ -27,6 +27,9 @@ var Respuesta = function () {
 
 try{	
 	function startYoutube(query) {
+		if(typeof(query=="undefined")){
+		query = "";
+		}
     // 2. Initialize the JavaScript client library.
   gapi.client.init({
     'apiKey': 'AIzaSyCgThUu4OMEZ3QQlXI9enG60YMTVHXYv_8',

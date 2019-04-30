@@ -3,15 +3,11 @@
 
  var viewModel  = null;
  document.onreadystatechange = function () {
-    if (document.readyState == "complete") {   
-		viewModel = new ViewModelRespuesta();  	
+    if (document.readyState == "complete") {   		
 		ko.applyBindings(viewModel);
-					
-
 	    }
-
 }
-
+viewModel = new ViewModelRespuesta();  	
 
 function ViewModelRespuesta() {
 	var self = this;
@@ -44,7 +40,7 @@ try{
   }).then(function(response) {
     console.log(response.result);
 	var resultObject = response.result;
-	ViewModelRespuesta();
+	
 			for(var i = 0 ; i<response.result.items.length; i++ ){
 			var c = new Respuesta();
 			c.titulo = response.result.items[i].snippet.title;

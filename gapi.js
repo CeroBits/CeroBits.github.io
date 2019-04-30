@@ -8,9 +8,7 @@
 		ko.applyBindings(viewModel);
 					
 
-    }
 
-}
 function ViewModelRespuesta() {
 					var self = this;
 					
@@ -76,4 +74,6 @@ catch(error){
 		}
 		
 
-	
+	    }
+
+}

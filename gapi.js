@@ -2,12 +2,13 @@
 
 
  var viewModel  = null;
+viewModel = new ViewModelRespuesta();  	
  document.onreadystatechange = function () {
     if (document.readyState == "complete") {   		
 		ko.applyBindings(viewModel);
 	    }
 }
-viewModel = new ViewModelRespuesta();  	
+
 
 function ViewModelRespuesta() {
 	var self = this;

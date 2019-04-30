@@ -47,7 +47,11 @@ try{
 			for(var i = 0 ; i<response.result.items.length; i++ ){
 			var c = new Respuesta();
 			c.titulo = response.result.items[i].snippet.title;
+		    	if(typeof(response.result.items[0].id.videoId) =="undefined"){
+			c.videoId = response.result.items[i].id.playlistId;
+			}else{
 			c.videoId = response.result.items[i].id.videoId;
+			}
 			c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
 			 viewModel.dataResp.push(c);
 			}

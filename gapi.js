@@ -1,5 +1,32 @@
 //  'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
 
+
+ var viewModel  = null;
+ document.onreadystatechange = function () {
+    if (document.readyState == "complete") {   
+		viewModel = new ViewModelRespuesta();  	
+		ko.applyBindings(viewModel);
+					
+
+    }
+
+}
+function ViewModelRespuesta() {
+					var self = this;
+					
+					self.dataResp=ko.observableArray([]);
+
+				}
+var Respuesta = function () {
+	var self = this;
+	self.titulo = null;
+	self.videoId= null;
+	self.imgurl = null;
+	self.alertID = function () {
+	alert(self.videoId);
+	};  
+}
+
 try{	
 	function startYoutube(query) {
     // 2. Initialize the JavaScript client library.
@@ -16,6 +43,14 @@ try{
   }).then(function(response) {
     console.log(response.result);
 	var resultObject = response.result;
+	
+			for(var i = 0 ; i<response.result.items.length; i++ ){
+			var c = new Respuesta();
+			c.titulo = response.result.items[i].snippet.title;
+			c.videoId = response.result.items[i].id.videoId;
+			c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
+			 viewModel.dataResp.push(c);
+			}
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
   });

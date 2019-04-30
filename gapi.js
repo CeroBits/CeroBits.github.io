@@ -8,11 +8,14 @@
 		ko.applyBindings(viewModel);
 					
 
+	    }
+
+}
+
 
 function ViewModelRespuesta() {
-					var self = this;
-					
-					self.dataResp=ko.observableArray([]);
+	var self = this;
+	self.dataResp=ko.observableArray([]);
 
 				}
 var Respuesta = function () {
@@ -41,7 +44,7 @@ try{
   }).then(function(response) {
     console.log(response.result);
 	var resultObject = response.result;
-	
+	ViewModelRespuesta();
 			for(var i = 0 ; i<response.result.items.length; i++ ){
 			var c = new Respuesta();
 			c.titulo = response.result.items[i].snippet.title;
@@ -73,7 +76,3 @@ catch(error){
 			startYoutube(query);
 		}
 		
-
-	    }
-
-}

@@ -35,7 +35,7 @@ try{
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://www.googleapis.com/youtube/v3/search?q='+query+'&part=snippe&type=video,playlist'
+      'path': 'https://www.googleapis.com/youtube/v3/search?q='+query+'&part=snippet&type=video,playlist'
     })
   }).then(function(response) {
     console.log(response.result);

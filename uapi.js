@@ -52,7 +52,7 @@
 				break;
 			}			
 		}
-		///key=AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM	
+	
 		
 		/*function playVideo(){
 			

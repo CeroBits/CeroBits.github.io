@@ -12,7 +12,7 @@ viewModel = new ViewModelRespuesta();
 
 function ViewModelRespuesta() {
 	var self = this;
-	self.Prueba= null;
+	self.PruebaDos= null;
 	self.dataResp=ko.observableArray([]);
 
 				}
@@ -25,7 +25,8 @@ var Respuesta = function () {
 	alert(self.videoId);
 	};  
 }
-
+ 
+ self.PruebaDos= "TEXO DE PRUEBA KNOCKOUT";
 try{	
 	function startYoutube(query) {
 		if(typeof(query=="undefined")){

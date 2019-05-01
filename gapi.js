@@ -68,7 +68,7 @@ catch(error){
 //////////////////////////////////////////
  function searchParam(){			
 			var query =  encodeURIComponent(document.getElementById("params").value);
-			viewModel.dataResp(null);
+			viewModel.dataResp.removeAll()
 			startYoutube(query);
 		}
 //////////////////////////////////////////////////

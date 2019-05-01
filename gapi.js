@@ -21,7 +21,7 @@ var Respuesta = function () {
 	self.videoId= null;
 	self.imgurl = null;
 	self.alertID = function () {
-	alert(self.videoId);
+	player.loadVideoById(videoId);
 	};  
 } 
 try{	

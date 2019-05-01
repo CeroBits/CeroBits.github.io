@@ -28,7 +28,7 @@ var Respuesta = function () {
 	};  
 }
  
- viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT";
+ viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT DOS";
  
 try{	
 	function startYoutube(query) {

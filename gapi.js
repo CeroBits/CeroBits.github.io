@@ -27,7 +27,7 @@ var Respuesta = function () {
 	alert(self.videoId);
 	};  
 }
- 
+ //vieModel
  viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT yes SDS";
  /*
 try{	

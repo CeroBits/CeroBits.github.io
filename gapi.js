@@ -43,7 +43,7 @@ try{
   }).then(function(response) {
     console.log(response.result);
 	var resultObject = response.result;
-	viewModel.dataResp(null);
+	//viewModel.dataResp(null);
 			for(var i = 0 ; i<response.result.items.length; i++ ){
 				var c = new Respuesta();
 				c.titulo = response.result.items[i].snippet.title;

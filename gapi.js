@@ -1,6 +1,6 @@
 //  'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
 
-
+var tituloVM ="";
  var viewModel  = null;
 viewModel = new ViewModelRespuesta();  	
  document.onreadystatechange = function () {
@@ -14,6 +14,7 @@ function ViewModelRespuesta() {
 	var self = this;
 	self.Prueba= null;
 	self.PruebaDos= null;
+	self.PruebaTres= null;
 	self.ultimoTitulo= null;
 	self.dataResp=ko.observableArray([]);
 
@@ -29,7 +30,7 @@ var Respuesta = function () {
 }
  //vieModel
  viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT yes SDS";
- /*
+ 
 try{	
 	function startYoutube(query) {
 		if(typeof(query=="undefined")){
@@ -62,6 +63,7 @@ try{
 			  viewModel.Prueba = "TEXO DE PRUEBA KNOCKOUT";
 			  viewModel.ultimoTitulo = c.titulo;
 			 viewModel.dataResp.push(c);
+			 tituloVM=c.titulo;
 			}
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
@@ -82,4 +84,5 @@ catch(error){
 			var query =  encodeURIComponent(document.getElementById("params").value);
 			startYoutube(query);
 		}
-*/
+
+		vieModel.PruebaTres=tituloVM;

@@ -21,11 +21,12 @@ var Respuesta = function () {
 	self.videoId= null;
 	self.imgurl = null;
 	self.alertID = function () {
-	player.loadVideoById(videoId);
+	player.loadVideoById(self.videoId);
 	};  
 } 
 try{	
 	function startYoutube(query) {
+		
 		if(typeof(query)=="undefined"){
 		query = "";
 		}
@@ -67,6 +68,7 @@ catch(error){
 //////////////////////////////////////////
  function searchParam(){			
 			var query =  encodeURIComponent(document.getElementById("params").value);
+			viewModel.dataResp(null);
 			startYoutube(query);
 		}
 //////////////////////////////////////////////////

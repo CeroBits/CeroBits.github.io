@@ -10,14 +10,8 @@ viewModel = new ViewModelRespuesta();
 		ko.applyBindings(viewModel);
 	    }
 }
-
-
 function ViewModelRespuesta() {
 	var self = this;
-	self.Prueba= null;
-	self.PruebaDos= null;
-	self.PruebaTres= null;
-	self.ultimoTitulo= null;
 	self.dataResp=ko.observableArray([]);
 
 				}
@@ -29,10 +23,7 @@ var Respuesta = function () {
 	self.alertID = function () {
 	alert(self.videoId);
 	};  
-}
- //vieModel
- viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT yes SDS";
- 
+} 
 try{	
 	function startYoutube(query) {
 		if(typeof(query=="undefined")){

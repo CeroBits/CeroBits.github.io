@@ -53,10 +53,7 @@ try{
 				c.videoId = response.result.items[i].id.videoId;
 				}
 				c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
-			  viewModel.Prueba = "TEXO DE PRUEBA KNOCKOUT";
-			  viewModel.ultimoTitulo = c.titulo;
-			 viewModel.dataResp.push(c);
-			 tituloVM=c.titulo;
+				viewModel.dataResp.push(c);			 
 			}
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);

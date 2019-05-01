@@ -14,6 +14,7 @@ function ViewModelRespuesta() {
 	var self = this;
 	self.Prueba= null;
 	self.PruebaDos= null;
+	self.ultimoTitulo= null;
 	self.dataResp=ko.observableArray([]);
 
 				}
@@ -28,7 +29,7 @@ var Respuesta = function () {
 }
  
  viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT";
- /*
+ 
 try{	
 	function startYoutube(query) {
 		if(typeof(query=="undefined")){
@@ -50,15 +51,16 @@ try{
 	var resultObject = response.result;
 	
 			for(var i = 0 ; i<response.result.items.length; i++ ){
-			var c = new Respuesta();
-			c.titulo = response.result.items[i].snippet.title;
-		    	if(typeof(response.result.items[i].id.videoId) =="undefined"){
-			c.videoId = response.result.items[i].id.playlistId;
-			}else{
-			c.videoId = response.result.items[i].id.videoId;
-			}
-			c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
-			 viewModel.Prueba = "TEXO DE PRUEBA KNOCKOUT";
+				var c = new Respuesta();
+				c.titulo = response.result.items[i].snippet.title;
+					if(typeof(response.result.items[i].id.videoId) =="undefined"){
+				c.videoId = response.result.items[i].id.playlistId;
+				}else{
+				c.videoId = response.result.items[i].id.videoId;
+				}
+				c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
+			  viewModel.Prueba = "TEXO DE PRUEBA KNOCKOUT";
+			  viewModel.ultimoTitulo = c.titulo;
 			 viewModel.dataResp.push(c);
 			}
   }, function(reason) {
@@ -80,4 +82,3 @@ catch(error){
 			var query =  encodeURIComponent(document.getElementById("params").value);
 			startYoutube(query);
 		}
-*/

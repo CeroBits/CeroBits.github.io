@@ -1,10 +1,12 @@
 var apiKey ="AIzaSyCvHWpUvF8M4USwUEWpfZfM5CgY6Q3wa74";
 
-var tituloVM ="";
+
  var viewModel  = null;
-viewModel = new ViewModelRespuesta();  	
+viewModel = new ViewModelRespuesta();  
+// 1. Load the JavaScript client library.	
  document.onreadystatechange = function () {
-    if (document.readyState == "complete") {   		
+    if (document.readyState == "complete") { 
+		gapi.load('client', startYoutube);	
 		ko.applyBindings(viewModel);
 	    }
 }
@@ -69,20 +71,13 @@ try{
     console.log('Error: ' + reason.result.error.message);
   });
 };
-// 1. Load the JavaScript client library.
-document.onreadystatechange = function () {
-    if (document.readyState == "complete") {		
-		gapi.load('client', startYoutube);	
-        }
-    }
-}
 catch(error){
 	console.log(error.message);
 	
 }
+//////////////////////////////////////////
  function searchParam(){			
 			var query =  encodeURIComponent(document.getElementById("params").value);
 			startYoutube(query);
 		}
-
-		vieModel.PruebaTres=tituloVM;
+//////////////////////////////////////////////////

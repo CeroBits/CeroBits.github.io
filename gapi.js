@@ -1,4 +1,4 @@
-//  'apiKey': 'AIzaSyBHBat1hx_r3UYAm-0hprKhheTe4fv2dEM',
+var apiKey ="AIzaSyCvHWpUvF8M4USwUEWpfZfM5CgY6Q3wa74";
 
 var tituloVM ="";
  var viewModel  = null;
@@ -38,7 +38,7 @@ try{
 		}
     // 2. Initialize the JavaScript client library.
   gapi.client.init({
-    'apiKey': 'AIzaSyCgThUu4OMEZ3QQlXI9enG60YMTVHXYv_8',
+    'apiKey': apiKey,
     // clientId and scope are optional if auth is not required.
     //'clientId': 'YOUR_WEB_CLIENT_ID.apps.googleusercontent.com',
     //'scope': 'profile',

@@ -29,7 +29,7 @@ var Respuesta = function () {
 }
  
  viewModel.PruebaDos= "TEXO DE PRUEBA KNOCKOUT DOS SDS";
- 
+ /*
 try{	
 	function startYoutube(query) {
 		if(typeof(query=="undefined")){
@@ -82,3 +82,4 @@ catch(error){
 			var query =  encodeURIComponent(document.getElementById("params").value);
 			startYoutube(query);
 		}
+*/

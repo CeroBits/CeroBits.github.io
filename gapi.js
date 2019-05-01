@@ -12,6 +12,7 @@ viewModel = new ViewModelRespuesta();
 
 function ViewModelRespuesta() {
 	var self = this;
+	self.Prueba= null;
 	self.dataResp=ko.observableArray([]);
 
 				}
@@ -54,6 +55,7 @@ try{
 			c.videoId = response.result.items[i].id.videoId;
 			}
 			c.imgurl = response.result.items[i].snippet.thumbnails.default.url;
+			 viewModel.Prueba = "TEXO DE PRUEBA KNOCKOUT";
 			 viewModel.dataResp.push(c);
 			}
   }, function(reason) {

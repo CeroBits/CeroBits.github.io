@@ -13,7 +13,7 @@
           height: '220',
           width: '220',
           videoId:'M7lc1UVf-VE' ,//'_ioc6sdgugo',
-		  //playerVars: { 'autoplay': 1, 'controls': 0 },
+		  playerVars: { 'autoplay': 1, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange

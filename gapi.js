@@ -71,6 +71,7 @@ try{
     console.log('Error: ' + reason.result.error.message);
   });
 };
+}
 catch(error){
 	console.log(error.message);
 	

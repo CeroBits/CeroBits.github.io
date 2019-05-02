@@ -3340,6 +3340,7 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: 2em 2em;
+				color:#ffffff;
 			}
 
 			#menu > .close:before {

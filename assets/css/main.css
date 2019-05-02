@@ -1,20 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-p,h1,span {
-		color: #000000;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
-		font-weight: 300;
-		line-height: 1.75;
-}
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3339,8 +3325,7 @@ input, select, textarea {
 				height: 100%;
 				background-position: center;
 				background-repeat: no-repeat;
-				background-size: 2em 2em;
-				color:#ffffff !important;
+				background-size: 2em 2em;				
 			}
 
 			#menu > .close:before {

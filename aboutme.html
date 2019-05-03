@@ -77,17 +77,17 @@
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Nombre" />
+											<input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="email" name="email" id="email" placeholder="Ingrese su Email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+											<textarea name="message" id="message" placeholder="Deje su Mensaje aca"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Enviar" class="primary" /></li>
+										<li><input type="submit" value="Enviar" class="primary" onclick="sendMail() /></li>
 									</ul>
 								</form>
 							</section>
@@ -135,6 +135,15 @@
 			span.onclick = function() { 
 			  modal.style.display = "none";
 			}
+			function sendMail(){	
+	 var nameContacto = document.getElementById("name").value;
+	 var correoContacto = document.getElementById("email").value;
+	  var bodyCorreo = document.getElementById("message").value;
+	    document.location.href = "mailto:garon.santana@gmail.com?subject="
+        + encodeURIComponent("GitHubPage Mail from: "+nameContacto)
+        + "&body=" + encodeURIComponent("Contacto :"+correoContacto+"-"+bodyCorreo);
+	
+}
 		</script>
 	</body>
 </html>

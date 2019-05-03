@@ -50,9 +50,18 @@
 							<header>
 								<h1>Bienvenido a CeroBits.github.io</h1>
 								<!-- Foto de Linkedin -->
-								<span><img href="https://media.licdn.com/dms/image/C4D03AQG4T9DaJ8gbhQ/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=T2IbReLh5RkVAuqOh13qab_uliGo6UACKmSSkTdYjnY" src="https://media.licdn.com/dms/image/C4D03AQG4T9DaJ8gbhQ/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=T2IbReLh5RkVAuqOh13qab_uliGo6UACKmSSkTdYjnY" alt="aboutme" height="30%" width="30%" style= "border-radius: 50%">
+								
+								<!-- The Modal -->
+								<span><img src="https://media.licdn.com/dms/image/C4D03AQG4T9DaJ8gbhQ/profile-displayphoto-shrink_200_200/0?e=1562198400&v=beta&t=T2IbReLh5RkVAuqOh13qab_uliGo6UACKmSSkTdYjnY" alt="aboutme" height="30%" width="30%" style= "border-radius: 50%">
+								
 								<p>Sobre mi.</p>
-								</span>								
+								</span>	
+								<div id="myModal" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img01">
+								  <div id="caption"></div>
+								</div>
+								
 								<br>
 								<p>Carismático, Emprendedor, Analítico, Curioso, suelen describirme como persona, poseo conocimientos clave en C#,SQL, Javascript con los cuales he trabajado para proveer empresas con soluciones a sus necesidades, estableciendome como desarrollador y a su vez como vendedor de un producto en esta era tan voraz de tecnología.</p>
 								<br>
@@ -112,6 +121,27 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 	</body>
 </html>

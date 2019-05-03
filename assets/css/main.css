@@ -3640,7 +3640,7 @@ input, select, textarea {
 .close {
   position: absolute;
   left: 15px;
-  left: 35px;
+  left: 20px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
